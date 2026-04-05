@@ -2,7 +2,7 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, Request, status
 
-from config.logger import logger
+from src.config.logger import logger
 from src.config.limiter import limiter
 from src.users.dependencies.auth_dependency import get_auth_service
 from src.users.exceptions.users_exceptions import (

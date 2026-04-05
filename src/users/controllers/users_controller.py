@@ -2,7 +2,7 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from config.logger import logger
+from src.config.logger import logger
 from src.users.dependencies.auth_dependency import get_user_id
 from src.users.dependencies.users_dependency import get_user_service
 from src.users.exceptions.users_exceptions import UserNotFoundError

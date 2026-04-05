@@ -4,7 +4,7 @@ from typing import Annotated
 from fastapi import Depends, HTTPException, Security, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
-from config.logger import logger
+from src.config.logger import logger
 from src.config.project_config import Settings
 from src.users.dependencies.users_dependency import get_user_repository
 from src.users.exceptions.users_exceptions import (
